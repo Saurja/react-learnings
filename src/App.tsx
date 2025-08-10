@@ -5,6 +5,7 @@ import { UseStateHook } from "./react-hooks/use-state";
 import { UseMemoHook } from "./react-hooks/use-memo";
 import { UseRefHook } from "./react-hooks/use-ref";
 import { CreateContextHook } from "./react-hooks/use-context/context-parent";
+import { UseReducerHook } from "./react-hooks/use-reducer";
 
 function App() {
   const [showEffectExample, setShowEffectExample] = useState<boolean>(true);
@@ -23,6 +24,8 @@ function App() {
       <UseRefHook></UseRefHook>
       <hr />
       <CreateContextHook></CreateContextHook>
+      <hr />
+      <UseReducerHook></UseReducerHook>
     </>
   );
 }
