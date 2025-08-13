@@ -6,6 +6,8 @@ import { UseMemoHook } from "./react-hooks/use-memo";
 import { UseRefHook } from "./react-hooks/use-ref";
 import { CreateContextHook } from "./react-hooks/use-context/context-parent";
 import { UseReducerHook } from "./react-hooks/use-reducer";
+import { ParentZustandDemo } from "./state-management/zustand-demo/zustand-sm";
+import { BearsPage } from "./state-management/use-case-demp/Bears";
 
 function App() {
   const [showEffectExample, setShowEffectExample] = useState<boolean>(true);
@@ -26,6 +28,10 @@ function App() {
       <CreateContextHook></CreateContextHook>
       <hr />
       <UseReducerHook></UseReducerHook>
+      <hr />
+      <ParentZustandDemo />
+      <hr />
+      <BearsPage />
     </>
   );
 }
